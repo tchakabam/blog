@@ -1,7 +1,11 @@
 menu:
     Blog: /
+    About: javascript:alert("Hey there. I'm an engineer and music producer. Image and sound is my main focus.")
     Archive: /archives/
-    Rss: /atom.xml
+    Email: javascript:alert("You'd like to establish contact? Reach me via disparat (ät) gmail.com. Looking forward :)")
+    Code: https://github.com/tchakabam
+    Music: https://soundcloud.com/tchakabam
+    Photos: https://www.flickr.com/photos/tchakabam/albums
 
 favicon: /favicon.png
 logo: /favicon.png
