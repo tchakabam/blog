@@ -1,5 +1,5 @@
 ---
-title: foo
+title: Travelling through central and south-east Asia
 date: 2013-11-20 21:38:51
 tags:
 ---
@@ -14,6 +14,9 @@ In 2013 I ended up travelling through central Asia down to south-east. Here a fe
 <p><a href="http://www.flickr.com/photos/tchakabam/10484058094/" title="DSC02709 von tchakabam bei Flickr" target="_blank" rel="external"><img src="http://farm4.staticflickr.com/3769/10484058094_b3c24fb0eb.jpg" width="500" height="332" alt="DSC02709"></a></p>
 <p><a href="http://www.flickr.com/photos/tchakabam/10484152503/" title="DSC02355 von tchakabam bei Flickr" target="_blank" rel="external"><img src="http://farm4.staticflickr.com/3831/10484152503_161f679ce8.jpg" width="500" height="332" alt="DSC02355"></a></p>
 <p><a href="http://www.flickr.com/photos/tchakabam/10174715255/" title="DSC01263 von tchakabam bei Flickr" target="_blank" rel="external"><img src="http://farm6.staticflickr.com/5459/10174715255_75c3491b1a.jpg" width="500" height="332" alt="DSC01263"></a></p>
-<p>Want to see more photos? Now you could go to my Flickr stuff <a href="http://www.flickr.com/photos/tchakabam" title="Stevan H's Flickr page" target="_blank" rel="external">here</a> (<a href="http://www.flickr.com/photos/tchakabam" target="_blank" rel="external">http://www.flickr.com/photos/tchakabam</a>).</p>
+
+Want to see more photos? Now you could go to my Flickr stuff <a href="http://www.flickr.com/photos/tchakabam" title="Stevan H's Flickr page" target="_blank" rel="external">here</a> 
+
+<a href="http://www.flickr.com/photos/tchakabam" target="_blank" rel="external">http://www.flickr.com/photos/tchakabam</a>.
 
 <p>Want to talk about travelling? Drop me a line!</p>
