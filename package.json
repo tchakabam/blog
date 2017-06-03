@@ -21,9 +21,9 @@
     "hexo-server": "^0.2.0"
   },
   "scripts": {
-    "dev": "hexo server",
+    "start": "hexo server",
     "sass": "cd themes/apollo-mod && npm run sass",
-    "deploy": "rm -Rf public && hexo generate && cp -R public/* disparat.org/blog/",
-    "start": "cd disparat.org && static"
+    "build": "rm -Rf public && hexo generate && cp -R public/* dist/blog/",
+    "test": "cd dist && static"
   }
 }
