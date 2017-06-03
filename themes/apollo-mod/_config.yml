@@ -1,8 +1,6 @@
 menu:
     Blog: /
     Archive: /archives/
-    Weibo: http://weibo.com/sunchongsheng
-    GitHub: https://github.com/pinggod
     Rss: /atom.xml
 
 favicon: /favicon.png
@@ -16,7 +14,7 @@ cloudTie:
 
 # Analytics
 # google-analytics:
-ga: UA-65933410-1
+#ga: UA-65933410-1
 
 # Copyright Infomation
-startyear: 2015
+startyear: 2017
