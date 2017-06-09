@@ -1,6 +1,6 @@
 menu:
     Blog: /
-    About: javascript:alert("Hey there. I'm an engineer and music producer. Image, communication and sound is my main focus.")
+    About: javascript:alert("Hey there. I'm an engineer and music producer. Moving images, graphics, communication and sound is my main focus.")
     Archive: /archives/
     Email: javascript:alert("You'd like to establish contact? Reach me via disparat (ät) gmail.com. Looking forward :)")
     Code: https://github.com/tchakabam

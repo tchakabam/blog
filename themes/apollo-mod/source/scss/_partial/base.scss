@@ -6,6 +6,7 @@
 html, body {
     width: 100%;
     height: 100%;
+
 }
 
 body {
@@ -13,8 +14,16 @@ body {
     color: #34495e;
     font-size: 15px;
     line-height: 1.6;
-    background-color: #fff;
+    background-color: #FFC62D;
     font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.wrap {
+    background-color: #fff;
+}
+
+#logo {
+    cursor: pointer;
 }
 
 ul.nav,
@@ -29,7 +38,7 @@ ul {
 }
 
 a, a:active {
-    color: #386E74;
+    color: #DD5200;
     text-decoration: none;
 }
 
