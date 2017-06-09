@@ -1,0 +1,7 @@
+{
+  "username": "tchakabam.com",
+  "host": "ftp.strato.de",
+  "port": 21,
+  "localRoot": "./public",
+  "remoteRoot": "/blog/"
+}
