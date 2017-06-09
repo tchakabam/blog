@@ -68,7 +68,7 @@ function draw() {
 	ctx.strokeStyle = '#036';
 
 	ctx.beginPath();
-	ctx.arc(width/2, height/2, width/2 - 1, 0, 2 * Math.PI);
+	ctx.rect(1, 1, width - 2, height -2);
 	ctx.stroke();
 	ctx.fill();
 
