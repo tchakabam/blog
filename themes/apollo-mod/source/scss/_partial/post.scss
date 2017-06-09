@@ -2,11 +2,16 @@
     padding-top: 1em;
 }
 
+.post-title a {
+    color: #00A388;
+}
+
 .post-block {
     .post-title {
         margin: 0.65em 0;
-        color: #386E74;
+        color: #00A388;
         font-size: 1.5em;
+        background-color: #1F1611;
     }
 
     .post-info {
@@ -27,6 +32,10 @@
 }
 
 .post-content {
+
+    color: #00A388;
+    font-size: 1.4em;
+
     h2, h3, h4, h5, h6 {
         position: relative;
         margin: 1em 0;
@@ -54,6 +63,7 @@
         font-size: 18px;
     }
     a {
+        color: #FF6138;
         word-break: break-all;
     }
     blockquote {
@@ -63,7 +73,8 @@
     }
     img {
         display: block;
-        max-width: 100%;
+        max-width: 90%;
+        border: solid 1px #386E74;
         margin: 1em auto;
     }
     & > table,
