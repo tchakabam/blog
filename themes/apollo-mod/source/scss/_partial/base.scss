@@ -11,11 +11,19 @@ html, body {
 
 body {
     margin: 0;
-    color: #34495e;
+    color: #79BD8F;
     font-size: 15px;
     line-height: 1.6;
-    background-color: #FFC62D;
+    background-color: #FF6138;
     font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1 {
+    background-color: #FFFF9D;
+}
+
+.logo-link canvas {
+    transform: rotate(30deg);
 }
 
 .wrap {
@@ -38,14 +46,14 @@ ul {
 }
 
 a, a:active {
-    color: #DD5200;
+    color: #79BD8F;
     text-decoration: none;
 }
 
 a.nav-list-link.active,
 a.nav-list-link:hover,
 a.post-title-link:hover {
-    border-bottom: 2px solid #00d0ff;
+    border-bottom: 2px solid #BEEB9F;
 }
 
 hr {

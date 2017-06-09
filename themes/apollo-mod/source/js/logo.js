@@ -36,9 +36,7 @@ function react1(event) {
 	}
 	
 	if (event.type === 'click') {
-		setTimeout(function() {
-			window.location = '/';
-		}, 1000);
+		window.location = '/';
 	}
 }
 
@@ -67,7 +65,7 @@ function draw() {
 	ctx.fillRect(0, 0, width, height);
 
 	ctx.fillStyle = '#fff';
-	ctx.strokeStyle = '#FFC62D';
+	ctx.strokeStyle = '#036';
 
 	ctx.beginPath();
 	ctx.arc(width/2, height/2, width/2 - 1, 0, 2 * Math.PI);
