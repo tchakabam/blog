@@ -19,13 +19,16 @@
     "hexo-renderer-jade": "^0.4.1",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "luminous-lightbox": "1.0.1"
   },
   "scripts": {
     "start": "hexo server",
     "deploy": "node_modules/.bin/ftploy",
     "sass": "cd themes/apollo-mod && npm run sass",
     "build": "rm -Rf public && hexo generate && cp -R public/* dist/blog/",
+    "js": "cp node_modules/luminous-lightbox/dist/* source/js/ && cp source/js/Luminous.js dist/blog/js/",
+    "all": "npm run sass && npm run build && npm run js",
     "test": "cd dist && static"
   }
 }
