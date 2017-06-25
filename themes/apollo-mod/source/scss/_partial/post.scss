@@ -3,15 +3,16 @@
 }
 
 .post-title a {
-    color: #00A388;
+    background-color: #F8F8F8;
+    color: #79B7FF;
 }
 
 .post-block {
     .post-title {
         margin: 0.65em 0;
-        color: #00A388;
+        color: #79B7FF;
         font-size: 1.5em;
-        background-color: #1F1611;
+        background-color: #F8F8F8;
     }
 
     .post-info {
@@ -33,7 +34,7 @@
 
 .post-content {
 
-    color: #00A388;
+    color: #52656B;
     font-size: 1.4em;
 
     h2, h3, h4, h5, h6 {
@@ -63,7 +64,8 @@
         font-size: 18px;
     }
     a {
-        color: #FF6138;
+        color: #79B7FF;
+        background-color: #F8F8F8;
         word-break: break-all;
     }
     blockquote {
@@ -188,14 +190,14 @@ $signs: ("html", "js", "bash", "css", "scss","diff", "java", "xml", "python", "j
 }
 
 pre {
-    color: #525252;
+    color: #79B7FF;
     .function .keyword,
     .constant {
        color: #0092db;
     }
     .keyword,
     .attribute {
-        color: #e96900;
+        color: #6B8500;
     }
     .number,
     .literal {

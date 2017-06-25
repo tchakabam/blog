@@ -60,6 +60,7 @@ function draw() {
 
 	ctx.clearRect(0, 0, width, height);
 
+	/*
 	//ctx.fillStyle = '#024'
 	ctx.fillStyle = '#fff'
 	ctx.fillRect(0, 0, width, height);
@@ -69,8 +70,9 @@ function draw() {
 
 	ctx.beginPath();
 	ctx.rect(1, 1, width - 2, height -2);
-	ctx.stroke();
-	ctx.fill();
+	//ctx.stroke();
+	//ctx.fill();
+	*/
 
 	var rand0 = Math.random();
 	var rand1 = Math.random();
@@ -109,7 +111,7 @@ function draw() {
 	var segmentWidth = width / numBeziers;
 	for(var i=0; i < numBeziers; i++) {
 		var mod = i % 2 === 0 ? sin0 : -sin0;
-		ctx.strokeStyle = '#00f';
+		ctx.strokeStyle = '#79B7FF';
 		ctx.beginPath();
 		ctx.bezierCurveTo(i * segmentWidth, middle,
 							i*segmentWidth + segmentWidth/2, mod * height/4 + middle,
@@ -121,7 +123,7 @@ function draw() {
 	var segmentWidth = width / numBeziers;
 	for(var i=0; i < numBeziers; i++) {
 		var mod = i % 2 === 0 ? sin1 : -sin1;
-		ctx.strokeStyle = '#004';
+		ctx.strokeStyle = '#B8B89F';
 		ctx.beginPath();
 		ctx.bezierCurveTo(i * segmentWidth, middle,
 							i*segmentWidth + segmentWidth/2, mod * height/4 + middle,
@@ -133,7 +135,7 @@ function draw() {
 	var segmentWidth = width / numBeziers;
 	for(var i=0; i < numBeziers; i++) {
 		var mod = i % 2 === 0 ? sin3 : -sin3;
-		ctx.strokeStyle = '#036';
+		ctx.strokeStyle = '#79B7FF';
 		ctx.beginPath();
 		ctx.bezierCurveTo(i * segmentWidth, middle,
 							i*segmentWidth + segmentWidth/2, mod * height/4 + middle,
@@ -145,7 +147,7 @@ function draw() {
 	var segmentWidth = width / numBeziers;
 	for(var i=0; i < numBeziers; i++) {
 		var mod = i % 2 === 0 ? sin2 : -sin2;
-		ctx.strokeStyle = '#0fc';
+		ctx.strokeStyle = '#9EC400';
 		ctx.beginPath();
 		ctx.bezierCurveTo(i * segmentWidth, middle,
 							i*segmentWidth + segmentWidth/2, mod * height/4 + middle,
@@ -157,7 +159,7 @@ function draw() {
 	var segmentWidth = width / numBeziers;
 	for(var i=0; i < numBeziers; i++) {
 		var mod = i % 2 === 0 ? sin3 : -sin3;
-		ctx.strokeStyle = '#0fc';
+		ctx.strokeStyle = '#FF3B77';
 		ctx.beginPath();
 		ctx.bezierCurveTo(i * segmentWidth, middle,
 							i*segmentWidth + segmentWidth/2, mod * height/4 + middle,
@@ -169,7 +171,7 @@ function draw() {
 	var segmentWidth = width / numBeziers;
 	for(var i=0; i < numBeziers; i++) {
 		var mod = (i % 2 === 0 ? sin0 : -sin0) + rand2/30;
-		ctx.strokeStyle = '#0af';
+		ctx.strokeStyle = '#52656B';
 		ctx.beginPath();
 		ctx.bezierCurveTo(i * segmentWidth, middle,
 							i*segmentWidth + segmentWidth/2, mod * height/4 + middle,
