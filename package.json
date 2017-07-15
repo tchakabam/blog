@@ -26,7 +26,7 @@
     "start": "hexo server",
     "deploy": "node_modules/.bin/ftploy",
     "sass": "cd themes/apollo-mod && npm run sass",
-    "build": "rm -Rf public && hexo generate && cp -R public/* dist/blog/",
+    "build": "rm -Rf public dist/blog/* && hexo generate && cp -R public/* dist/blog/",
     "js": "cp node_modules/luminous-lightbox/dist/* source/js/ && cp source/js/Luminous.js dist/blog/js/",
     "all": "npm run sass && npm run build && npm run js",
     "test": "cd dist && static"
