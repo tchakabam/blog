@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://dispar.at/blog/"/>
-  <updated>2017-06-09T21:15:44.755Z</updated>
+  <updated>2017-07-08T14:39:13.620Z</updated>
   <id>http://dispar.at/blog/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://dispar.at/blog/2017/06/09/xhr-shaper/"/>
     <id>http://dispar.at/blog/2017/06/09/xhr-shaper/</id>
     <published>2017-06-09T18:56:01.000Z</published>
-    <updated>2017-06-09T21:15:44.755Z</updated>
+    <updated>2017-07-08T14:39:13.620Z</updated>
     
     <content type="html"><![CDATA[<p>In the past two years I have been working a lot with JavaScript-based adaptive streaming engines. Sometime in 2016 it occured to me: there is actually a way we would be able to throttle the network traffic of the browser, from within the browser (if you are not into the topic, I’ll explain why that is a big deal to me further below). That idea was what led me to build <strong>XHR-shaper</strong> in the end.</p>
 <p><strong>What is XHR-Shaper?</strong>. </p>
@@ -31,7 +31,7 @@
 <p>And then all requests in that browser window will be really pretty slow.</p>
 <p>The cool thing about that is, you can just set it up on any page or app, and then just test/play with various network conditions, without needing to actually let the app or the test-suite know about it.</p>
 <p>When you want to integrate automated tests in browsers with it, it’s easy as saying hello. </p>
-<p>You can also limit it to one specific request by applying it to the specific XHR instance, but that will of course have you make your application aware it:</p>
+<p>You can also limit it to one specific request by applying it to the specific XHR instance, but that will of course have you make your application of it:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// Set your minimum desired latency</div><div class="line">xhr.shaper.minLatency = 1000;</div><div class="line"></div><div class="line">// Set your maximum desired bandwidth</div><div class="line">xhr.shaper.maxBandwidth = 512;</div></pre></td></tr></table></figure>
 <p>Here you can see a screenshot of the demo page (included in the project), where we see traces from three requests, at 500, 1000, 2000 and 10000kbps respectively. The demo page allows you to test downloading a chunk of data from a CDN (which is part of a popular test stream) - you can set max bandwidth and min latency to see how it affects the download - and traces the result in a graph.</p>
 <p><img id="xhr-shaper-demo" src="/blog/images/xhr-shaper-demo.png" href="/blog/images/xhr-shaper-demo.png"></p>

@@ -1,56 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
-
-var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
-  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-} : function (obj) {
-  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
-};
-
-var _createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-  };
-}();
-
-var _dom = require('./util/dom');
-
-var _throwIfMissing = require('./util/throwIfMissing');
-
-var _throwIfMissing2 = _interopRequireDefault(_throwIfMissing);
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-var LEFT_ARROW = 37;
-var RIGHT_ARROW = 39;
-
-// All officially-supported browsers have this, but it's easy to
-// account for, just in case.
-var HAS_ANIMATION = typeof document === 'undefined' ? false : 'animation' in document.createElement('div').style;
-
-var Lightbox = function () {
-  function Lightbox() {
-    var _this = this;
-
-    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){="" 'use="" strict';="" var="" _typeof2="typeof" symbol="==" "function"="" &&="" typeof="" symbol.iterator="==" "symbol"="" ?="" function="" (obj)="" {="" return="" obj;="" }="" :="" obj="" obj.constructor="==" !="=" symbol.prototype="" };="" object.defineproperty(exports,="" "__esmodule",="" value:="" true="" });="" _typeof="typeof" _typeof2(symbol.iterator)="==" "undefined"="" _typeof2(obj);="" _createclass="function" ()="" defineproperties(target,="" props)="" for="" (var="" i="0;" <="" props.length;="" i++)="" descriptor="props[i];descriptor.enumerable" =="" descriptor.enumerable="" ||="" false;descriptor.configurable="true;if" ("value"="" in="" descriptor)="" descriptor.writable="true;Object.defineProperty(target," descriptor.key,="" descriptor);="" }return="" (constructor,="" protoprops,="" staticprops)="" if="" (protoprops)="" defineproperties(constructor.prototype,="" protoprops);if="" (staticprops)="" defineproperties(constructor,="" staticprops);return="" constructor;="" }();="" _dom="require('./util/dom');" _throwifmissing="require('./util/throwIfMissing');" _throwifmissing2="_interopRequireDefault(_throwIfMissing);" _interoprequiredefault(obj)="" obj.__esmodule="" default:="" _classcallcheck(instance,="" constructor)="" (!(instance="" instanceof="" constructor))="" throw="" new="" typeerror("cannot="" call="" a="" class="" as="" function");="" left_arrow="37;" right_arrow="39;" all="" officially-supported="" browsers="" have="" this,="" but="" it's="" easy="" to="" account="" for,="" just="" case.="" has_animation="typeof" document="==" 'undefined'="" false="" 'animation'="" document.createelement('div').style;="" lightbox="function" lightbox()="" _this="this;" options="arguments.length"> 0 && arguments[0] !== undefined ? arguments[0] : {};
 
     _classCallCheck(this, Lightbox);
 
@@ -695,3 +643,4 @@ function throwIfMissing() {
 }
 
 },{}]},{},[5]);
+</r.length;o++)s(r[o]);return>
