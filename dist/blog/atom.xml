@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://dispar.at/blog/"/>
-  <updated>2017-07-15T10:06:39.718Z</updated>
+  <updated>2017-07-15T10:58:12.366Z</updated>
   <id>http://dispar.at/blog/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Design of scheduling and rate-adaptation algorithms for adaptive HTTP streaming</title>
-    <link href="http://dispar.at/blog/2017/07/08/spie-article-2013/"/>
-    <id>http://dispar.at/blog/2017/07/08/spie-article-2013/</id>
+    <link href="http://dispar.at/blog/2017/07/08/design-of-scheduling-and-rate-adaptation-algorithms-for-adaptive-http-streaming/"/>
+    <id>http://dispar.at/blog/2017/07/08/design-of-scheduling-and-rate-adaptation-algorithms-for-adaptive-http-streaming/</id>
     <published>2017-07-08T14:54:33.000Z</published>
-    <updated>2017-07-15T10:06:39.718Z</updated>
+    <updated>2017-07-15T10:58:12.366Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Hey-there-I-have-done-some-science"><a href="#Hey-there-I-have-done-some-science" class="headerlink" title="Hey there, I have done some science"></a>Hey there, I have done some science</h1><p>In 2013 I published an article as part of the SPIE conference proceedings in San Diego 2013. The article can be found in the <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1744318" target="_blank" rel="external">SPIE digital library</a>. The original document can also be found <a href="https://drive.google.com/open?id=0Bytk0Mk6whyiR2R5ZWp6dkVzS0k" target="_blank" rel="external">here</a>.</p>
 <p>This would not have happened without the very valuable help of <a href="http://reznik.org/" target="_blank" rel="external">Yuri Reznik</a>. Here, I’d like to thank him a lot for this, once again! </p>
