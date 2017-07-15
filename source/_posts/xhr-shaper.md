@@ -4,13 +4,17 @@ date: 2017-06-09 20:56:01
 tags:
 ---
 
+# How to emulate bandwidth conditons in the browser?
+
 In the past two years I have been working a lot with JavaScript-based adaptive streaming engines. Sometime in 2016 it occured to me: there is actually a way we would be able to throttle the network traffic of the browser, from within the browser (if you are not into the topic, I'll explain why that is a big deal to me further below). That idea was what led me to build **XHR-shaper** in the end.
 
-**What is XHR-Shaper?**. 
+# What is XHR-Shaper? 
 
 It's a JavaScript module that hooks into the standard XMLHttpRequest (that is what browser-code uses to make HTTP requests). To do that, it sits in between the actual request and the standard application API which it mimics effectively - then it shapes the behavior of the state and events in such way that emulates a certain bandwidth and latency. That's it.
 
-You can literally check it out here: https://github.com/tchakabam/xhr-shaper
+You can try it out here: https://tchakabam.github.io/xhr-shaper/
+
+And here is the project repository: https://github.com/tchakabam/xhr-shaper
 
 So for example with that installed one can say:
 
@@ -46,7 +50,7 @@ And finally (to close the gap to all other tech blog articles), YES you can find
 npm install xhr-shaper
 ```
 
-**What the heck do you need it for?**
+# What the heck do you need it for?
 
 As long as I have been working with adaptive video streaming, we had to do network emulation to test what we were doing. That means that we are emulating certain conditions of the network, like bandwidth limitation and latency for example. Hence why the tools that are doing that are called "Network conditioner".
 
@@ -54,7 +58,7 @@ There are basically two ways to do it: via the client or server system on the IP
 
 When you want to setup automated testing with it usually is a hassle. But I have been through it :) The problem is that most of the time you'll want to use tools that run on the client system, since your server is usually a static CDN when you work with media streaming (so no throttling applicable there..). So when you want to test that your adaptation algorithms run correctly, you need drive that system-wide tool at the same time - that is feasible when your test-suite actually runs on the command-line. When you want to run such tests with a browser - well that's when things might get really tricky. In that case you may want to proxy all of your media-requests via a local proxy that does the traffic throttling - the browser can then control the throttling behavior via some controller endpoint of it. But all that seems really a bit of a hassle no?
 
-**How does XHR-shaper work exactly?**
+# How does XHR-shaper work exactly?
 
 It's really pretty simple. First we are over-writing the XHR in the `window` object with our own implementation, called `XHRProxy`. It really does nothing except proxying all the functions, properties and constructor to an internal "real" XHR object (we keep a ref to that constructor before we overwrite). So it works a bit like what developers in the browser-world call `shim` or `polyfill`, but the other way around :) Or the same. Just that in the end to do the download it needs to use the native already existing component.
 
@@ -64,7 +68,7 @@ Now as the request happens, we are progressively triggering events and setting t
 
 The main problem was really to not only deal with the usual `onreadystatechange` way to use the XHR, but to enable it to all kinds of things people may do with it. That also included correctly implementing `EventTarget`, but also making sure we really catch all events. Did you know there was not only `load`, but also `loadstart`. Yes sure. But then also `loadend`. So all of that was a bit tricky, but - it works now finally.
 
-**Use it as a cache**
+# Using it as a cache
 
 Eventually I thought, it could not only slow down requests but also speed them up.
 
@@ -80,7 +84,7 @@ The above problem is pretty lame, which is why media-engines can make good use o
 
 The cool thing now is with XHR-Shaper you can provide such a cache to any media-engine transparently, without it knowing about it (as long as it used XHRs to pull its data - it might not work with non-standard things).
 
-**Fetch API**
+# Fetch API
 
 There will be a new API in browsers to make requests, it's called `Fetch`. With that, building such a network conditioner will actually be even "simpler" - I hope.
 
